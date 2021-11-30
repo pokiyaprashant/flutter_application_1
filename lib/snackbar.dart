@@ -15,6 +15,19 @@ class _SnackbarpageState extends State<Snackbarpage> {
         title: Text("SnackBAr"),
         centerTitle: true,
       ),
+      body: Center(
+          child: ElevatedButton(
+              onPressed: () {
+                final snackbar = SnackBar(
+                  content: Text(
+                    "plz Realoding",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  ),
+                  action: SnackBarAction(label: 'undo', onPressed: () {}),
+                );
+                ScaffoldMessenger.of(context).showSnackBar(snackbar);
+              },
+              child: Text("OK"))),
     );
   }
 }
