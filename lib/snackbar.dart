@@ -15,6 +15,11 @@ class _SnackbarpageState extends State<Snackbarpage> {
         title: Text("SnackBAr"),
         centerTitle: true,
       ),
+      body: Center(
+        child: ElevatedButton(onPressed: () {
+          
+        }, child: Text("click")),
+      ),
     );
   }
 }
